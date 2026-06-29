@@ -8,6 +8,8 @@ const serverError = require('./middlewares/serverError');
 const notFound = require('./middlewares/notFound');
 // import function of middleware server checkAiKey
 const checkApiKey = require('./middlewares/checkApiKey');
+// import connection.js
+const connection = require('./database/connection')
 
 // middlware per servire i file statici della cartella pubblic
 app.use(express.static('public'))
